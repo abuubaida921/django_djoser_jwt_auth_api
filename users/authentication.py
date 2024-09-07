@@ -1,8 +1,5 @@
-from typing import Tuple
 from django.conf import settings
-from rest_framework.request import Request
 from rest_framework_simplejwt.authentication import JWTAuthentication
-from rest_framework_simplejwt.tokens import Token
 
 class CustomJWTAuthentication(JWTAuthentication):
     def authenticate(self, request):
